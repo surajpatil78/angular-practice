@@ -1,23 +1,22 @@
-<table>
+{{pageTitle}}
 
+<table *ngIf="products && products.length>0">
 <tr>
 <thead>
   <th>
-    Product name
+    Product photo
   </th>
   <th>
-    Product code
+    Product name
   </th>
 </thead>
 </tr>
 <tbody>
-  <tr>
+  <tr *ngFor="let product of products">
     <td>
-      qwe
-    </td>
-    <td>
-      asd
-    </td>
+      <img [src]='product.imageUrl'
+            [styles.width.px]='width'/> </td>
+    <td>{{product.productName}}</td>
   </tr>
 </tbody>
 
