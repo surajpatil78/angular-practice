@@ -1,22 +1,30 @@
+<p>
 {{pageTitle}}
-
+</p>
+<p>
+Filter by : <input type="text" [(ngModel)]="listFilter" />
+</p>
+<p>
+Filtered by : {{listFilter}}
+</p>
 <table *ngIf="products && products.length>0">
 <tr>
 <thead>
   <th>
-    Product photo
+    <input type="button" value="{{showImage?'Hide' : 'Show'}} Images" (click)="ToggelImages()"/>
   </th>
-  <th>
-    Product name
-  </th>
+  <th>Product name</th>
+  <th>5 Star Rating</th>
 </thead>
 </tr>
 <tbody>
-  <tr *ngFor="let product of products">
+  <tr *ngFor="let product of filteredProducts">
     <td>
-      <img [src]='product.imageUrl'
-            [styles.width.px]='width'/> </td>
+      <img *ngIf="showImage"
+            [src]='product.imageUrl'
+            [style.width.px]='imageWidth'/> </td>
     <td>{{product.productName}}</td>
+    <td>{{product.productRating}}</td>
   </tr>
 </tbody>
 
