@@ -8,15 +8,15 @@ Filter by : <input type="text" [(ngModel)]="listFilter" />
 Filtered by : {{listFilter}}
 </p>
 <table *ngIf="products && products.length>0">
-<tr>
 <thead>
+ <tr>
   <th>
     <input type="button" value="{{showImage?'Hide' : 'Show'}} Images" (click)="ToggelImages()"/>
   </th>
   <th>Product name</th>
   <th>5 Star Rating</th>
+  </tr>
 </thead>
-</tr>
 <tbody>
   <tr *ngFor="let product of filteredProducts">
     <td>
