@@ -68,5 +68,5 @@ export class ProductListComponent
     this.pageTitle = 'Product List The rating is : ' + message;
   }
 
-
+ 
 }
