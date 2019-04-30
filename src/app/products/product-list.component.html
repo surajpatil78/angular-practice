@@ -24,7 +24,7 @@ Filtered by : {{listFilter}}
             [src]='product.imageUrl'
             [style.width.px]='imageWidth'/> </td>
     <td>{{product.productName}}</td>
-    <td>{{product.productRating}}</td>
+    <td><pm-star [rating]='product.productRating'></pm-star></td>
   </tr>
 </tbody>
 
