@@ -4,9 +4,8 @@ import { Component, Input, OnChanges } from '@angular/core';
   templateUrl: './star.component.html'
 })
 export class StarComponent implements OnChanges {
-  @Input() rating: number;
-  inputedRating: number;
-
+  @Input() rating:number;
+  inputedRating:number;
   ngOnChanges(): void {
     this.inputedRating = this.rating;
   }

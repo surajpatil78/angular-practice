@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './products/prodcut-list.component';
-import {StarComponent} from './shared/star.component';
+import {StarComponent} from './products/shared/star.component';
 
 @NgModule({
   imports: [
