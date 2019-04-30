@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './products/prodcut-list.component';
 import {StarComponent} from './products/shared/star.component';
+import { AlertModule} from 'ngx-bootstrap';  
 
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AlertModule.forRoot()
   ],
   declarations: [
     AppComponent,
