@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './products/prodcut-list.component';
 import {StarComponent} from './products/shared/star.component';
 
+
 @NgModule({
   imports: [
     BrowserModule,
