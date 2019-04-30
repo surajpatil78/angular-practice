@@ -1,8 +1,8 @@
 <p>
-{{pageTitle}}
+	{{pageTitle}}
 </p>
 <p>
-Filter by : <input type="text" [(ngModel)]="listFilter" />
+	Filter by : <input type="text" [(ngModel)]="listFilter" />
 </p>
 <p>
 Filtered by : {{listFilter}}
@@ -25,7 +25,7 @@ Filtered by : {{listFilter}}
             [style.width.px]='imageWidth'/> </td>
     <td>{{product.productName}}</td>
     <td><pm-star [rating]='product.productRating'></pm-star></td>
-  </tr>
+</tr>
 </tbody>
 
 </table>
