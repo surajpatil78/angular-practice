@@ -7,6 +7,7 @@ import { ProductListComponent } from './products/prodcut-list.component';
 import {StarComponent} from './products/shared/star.component';
 import { AlertModule} from 'ngx-bootstrap';  
 
+import {ProductDetailComponent} from './product/product-detail.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { AlertModule} from 'ngx-bootstrap';
   declarations: [
     AppComponent,
     ProductListComponent,
-    StarComponent
+    StarComponent,
+    ProductDetailComponent
   ],
   bootstrap: [AppComponent]
 })
