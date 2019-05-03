@@ -25,7 +25,11 @@ Filtered by : {{listFilter}}
       <img *ngIf="showImage"
             [src]='product.imageUrl'
             [style.width.px]='imageWidth'/> </td>
-    <td>{{product.productName}}</td>
+    <td>
+      <a [routerLink]="['/productsdet', product.productId]">
+      {{product.productName}}
+      </a>
+      </td>
     <td><pm-star [rating]='product.productRating' (ratingClicked)='onRatingClicked($event)'></pm-star></td>
 </tr>
 </tbody>

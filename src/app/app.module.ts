@@ -18,7 +18,7 @@ import { RouterModule } from '@angular/router';
     AlertModule.forRoot(),
     RouterModule.forRoot([
       { path: 'products', component: ProductListComponent },
-      { path: 'productsdet', component: ProductDetailsComponent },
+      { path: 'productsdet/:id', component: ProductDetailsComponent },
     ])
   ],
   declarations: [
