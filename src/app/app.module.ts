@@ -10,6 +10,7 @@ import { AlertModule } from 'ngx-bootstrap';
 import { ProductDetailsComponent } from './products/product-detail.component';
 
 import { RouterModule } from '@angular/router';
+import {UserSettingsFormComponent} from './user-settings-form/user-settings-form.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { RouterModule } from '@angular/router';
     AppComponent,
     ProductListComponent,
     StarComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    UserSettingsFormComponent
   ],
   bootstrap: [AppComponent]
 })
