@@ -12,6 +12,8 @@ import { ProductDetailsComponent } from './products/product-detail.component';
 import { RouterModule } from '@angular/router';
 import {UserSettingsFormComponent} from './user-settings-form/user-settings-form.component';
 
+import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -20,7 +22,8 @@ import {UserSettingsFormComponent} from './user-settings-form/user-settings-form
     RouterModule.forRoot([
       { path: 'products', component: ProductListComponent },
       { path: 'productsdet/:id', component: ProductDetailsComponent },
-    ])
+    ]),
+    HttpClientModule
   ],
   declarations: [
     AppComponent,
