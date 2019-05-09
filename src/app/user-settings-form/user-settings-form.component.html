@@ -1,10 +1,10 @@
 from UserSettingsFormComponent
 
-<form #form="ngForm">
+<form #form="ngForm" (ngSubmit)="onSubmit(from)">
   <input type="text" id="name" name="name" class="" [(ngModel)]="userSettings.name" #classTest />
 <h3>{{classTest.className}}</h3>
 
-<button></button>
+<button>Submit</button>
 
 </form>
 
