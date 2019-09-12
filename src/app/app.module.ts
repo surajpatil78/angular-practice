@@ -13,6 +13,10 @@ import { RouterModule } from '@angular/router';
 import {UserSettingsFormComponent} from './user-settings-form/user-settings-form.component';
 
 import {HttpClientModule} from '@angular/common/http';
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
+
+import {LoginModule} from './login/login.module';
+import {EmployeeLoginComponent} from './login/employee-login/employee-login.component';
 
 @NgModule({
   imports: [
@@ -30,7 +34,9 @@ import {HttpClientModule} from '@angular/common/http';
     ProductListComponent,
     StarComponent,
     ProductDetailsComponent,
-    UserSettingsFormComponent
+    UserSettingsFormComponent,
+    AddEmployeeComponent,
+    EmployeeLoginComponent
   ],
   bootstrap: [AppComponent]
 })
