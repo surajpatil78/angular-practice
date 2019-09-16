@@ -23,3 +23,48 @@ main footer
 
 <br/>
 <app-employee-login></app-employee-login>
+
+<br/>---------------------------------------------------<br/>
+
+<div *ngIf="courses.length>0 then block1 else block2">
+</div>
+<ng-template #block1>
+ courses available
+</ng-template>
+
+<ng-template #block2>
+  No courses
+</ng-template>
+
+<br/>---------------------------------------------------<br/>
+
+<div *ngFor="let course of courses;">
+ {{course.id}}
+ {{course.name}}
+</div>
+
+<br/>---------------------------------------------------<br/>
+
+<div *ngFor="let course of courses; index as i">
+ {{i}}
+ {{course.id}}
+ {{course.name}}
+</div>
+
+<br/>---------------------------------------------------<br/>
+
+<div *ngFor="let course of courses; index as i; 
+      first as f_element; last as l_element;
+      even as isEven; odd as isOdd">
+      
+  {{i}}.
+ <span *ngIf="f_element">This is first element : </span>
+ <span *ngIf="l_element">This is last element : </span>
+
+ <span *ngIf="isEven">This is Even element : </span>
+ <span *ngIf="isOdd">This is Odd element : </span>
+
+ {{course.name}}
+</div>
+
+<br/>---------------------------------------------------<br/>
