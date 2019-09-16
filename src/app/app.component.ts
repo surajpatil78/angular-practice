@@ -12,6 +12,16 @@ export class AppComponent {
     {id:2, name:'Dot Net'},
     {id:3, name:'C#'}
   ];
-  
+
+  addCoarse(){
+    this.courses.push({id:4, name:'JAVA'});
+  }
+
+  removeCourse(course){
+    console.log(course);
+    let indexCourse = this.courses.indexOf(course);
+    this.courses.splice(indexCourse,1);
+  } 
+ 
 }
   
