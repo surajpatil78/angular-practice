@@ -13,7 +13,7 @@ export class AppComponent {
     {id:3, name:'C#'}
   ];
 
-  addCoarse(){
+  addCoarse(){ 
     this.courses.push({id:4, name:'JAVA'});
   }
 
