@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent {
+  isRed:boolean = true;
+  
+  isBlueBack:boolean = true;
 
   courses=[
     {id:1, name:'Angular'},
@@ -22,6 +26,9 @@ export class AppComponent {
     let indexCourse = this.courses.indexOf(course);
     this.courses.splice(indexCourse,1);
   } 
+
+  sampleVar:number=100;
  
+  
 }
   

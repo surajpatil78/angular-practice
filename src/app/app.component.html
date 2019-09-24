@@ -71,3 +71,35 @@ main footer
 </div>
 
 <button (click)="addCoarse()" class="btn-success">Add a coarse</button>
+
+<br/>---------------------------------------------------<br/>
+
+<div [ngSwitch]="sampleVar">
+  <div *ngSwitchCase="'1'">
+      One
+  </div>
+  <div *ngSwitchCase="'2'">
+      Two
+  </div>
+  <div *ngSwitchCase="'3'">
+      Three
+  </div>
+  <div *ngSwitchCase="'4'">
+      Four
+  </div>
+  <div *ngSwitchDefault>
+      Other
+  </div>
+</div>
+
+<br/>---------------------------------------------------<br/>
+
+<div [ngClass]="{'redColor':isRed, 'blueBackground':isBlueBack}">
+  Some content
+</div>
+
+<br/>---------------------------------------------------<br/>
+
+<div [ngStyle]="{'color': isRed ? 'red' : 'blue', 'font-size':'40px'}">
+  content for css
+</div>  
