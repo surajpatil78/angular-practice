@@ -17,7 +17,7 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 
 import {LoginModule} from './login/login.module';
 import {EmployeeLoginComponent} from './login/employee-login/employee-login.component';
-
+ 
 @NgModule({
   imports: [
     BrowserModule,
