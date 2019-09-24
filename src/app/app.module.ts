@@ -17,6 +17,7 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 
 import {LoginModule} from './login/login.module';
 import {EmployeeLoginComponent} from './login/employee-login/employee-login.component';
+import { HighlightDirective } from './highlight.directive';
  
 @NgModule({
   imports: [
@@ -36,7 +37,8 @@ import {EmployeeLoginComponent} from './login/employee-login/employee-login.comp
     ProductDetailsComponent,
     UserSettingsFormComponent,
     AddEmployeeComponent,
-    EmployeeLoginComponent
+    EmployeeLoginComponent,
+    HighlightDirective
   ],
   bootstrap: [AppComponent]
 })
