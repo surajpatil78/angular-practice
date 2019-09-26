@@ -18,6 +18,7 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import {LoginModule} from './login/login.module';
 import {EmployeeLoginComponent} from './login/employee-login/employee-login.component';
 import { HighlightDirective } from './highlight.directive';
+import { CourseService } from './course.service';
  
 @NgModule({
   imports: [
@@ -40,6 +41,7 @@ import { HighlightDirective } from './highlight.directive';
     EmployeeLoginComponent,
     HighlightDirective
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [CourseService]
 })
 export class AppModule { }

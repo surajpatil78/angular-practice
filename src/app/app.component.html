@@ -104,4 +104,10 @@ main footer
   content for css
 </div>  
 
-<h3 appHighlight>Some heading</h3> 
+<h3 appHighlight>Some heading</h3>
+
+<br/>-- Service -----------------------------------------------<br/>
+
+<div *ngFor="let course of courseProgram; index as i">
+ {{i}}.{{course.name}}
+</div>

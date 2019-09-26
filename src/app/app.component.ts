@@ -1,5 +1,5 @@
-
 import { Component } from '@angular/core';
+import { CourseService } from './course.service';
 
 @Component({
   selector: 'my-app',
@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent {
+  
+  courseProgram = [];
+  constructor(private courseService:CourseService){  
+    this.courseProgram = courseService.getCourses();
+  }
+
+
   isRed:boolean = true;
   
   isBlueBack:boolean = true;
