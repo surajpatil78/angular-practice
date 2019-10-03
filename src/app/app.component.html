@@ -1,28 +1,23 @@
 
-
+<p>-- app component-------------------------------------------</p>
 main header
 
 <ul>
-  <li [routerLink]="['/products']">
-    Products
-  </li>
-
+  <li [routerLink]="['/']">Home</li>
+  <li [routerLink]="['/products']">Products</li>
 </ul>
 
-<br/><br/>
-<router-outlet></router-outlet>
-<br/>
-<user-settings-form></user-settings-form>
-<br/>
-main footer
 
-<br/><br/>
---------------------------------------
-<br/><br/>
+<p [ngStyle]="{'font-weight':'bold'}">== Routing pages ==============================</p>
+<router-outlet></router-outlet>
+<p [ngStyle]="{'font-weight':'bold'}">============================== Routing pages ==</p>
+
+<user-settings-form></user-settings-form>
+
 <app-add-employee></app-add-employee>
 
-<br/>
 <app-employee-login></app-employee-login>
+
 
 <br/>---------------------------------------------------<br/>
 
@@ -111,3 +106,5 @@ main footer
 <div *ngFor="let course of courseProgram; index as i">
  {{i}}.{{course.name}}
 </div>
+
+<p>--------------------------------------------- app component --</p>
